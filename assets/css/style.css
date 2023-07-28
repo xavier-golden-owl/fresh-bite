@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap');
+@charset 'utf-8';
+
+/* CSS Variables */
+:root {
+
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Readex Pro', sans-serif;
+}
+
+nav {
+	height: 108px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	background: #FFF9EA;
+
+	font-style: normal;
+	line-height: normal;
+}
+
+nav > .logo {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+
+.logo p {
+	color: black;
+	font-size: 24px;
+	font-weight: 600;
+	align-self: flex-end;
+}
+
+.logo img {
+	width: 47px;
+	height: 47px;
+}
+
+.link-container > ul {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	font-size: 22px;
+	font-weight: 500;
+	gap: 35px;
+}
+
+.link-container li a {
+	text-decoration: none;
+	color: rgba(29, 29, 29, 0.70);
+}
+
+.link-select {
+	border-bottom: 4px solid #FFCB45 ;
+	border-radius: 1px;
+}
+
+
+nav > .function {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	gap: 0 33px;
+}
+
+
+nav > .function {
+	
+}
+
+nav .function .signin-button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 24px;
+	background-color: #FFCB45;
+	border-radius: 50px;
+
+	gap: 16px;
+}
+
+nav .function .signin-button p {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.cart {
+	position: relative;
+}
+
+.cart .cart-number {
+	position: absolute;
+	top: -8px;
+	right: -8px;
+	background-color: #FFCB45;
+}
+
+#intro {
+	height: 600px;
+	background-color: #FFF9EA;
+}
