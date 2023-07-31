@@ -315,6 +315,7 @@ main .second-part .card {
 footer {
 	background-color: #FFF9EA;
 	margin-top: 70px;
+	padding-bottom: 20px;
 }
 
 footer hr {
@@ -367,6 +368,7 @@ footer .second-part {
 	font-size: 16px;
 	font-weight: 400;
 	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 footer .second h3 {
@@ -381,6 +383,4 @@ footer .second p  {
 	color: rgba(29, 29, 29, 0.70);
 	font-size: 18px;
 	font-weight: 400;
-
-	margin-bottom: 16px;
 }
