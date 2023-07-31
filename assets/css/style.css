@@ -20,99 +20,145 @@ body {
 	font-family: 'Readex Pro', sans-serif;
 }
 
-nav {
-	height: 108px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
+header {
 	background: #FFF9EA;
-
-	font-style: normal;
-	line-height: normal;
+	height: 108px;
 }
 
-nav > .logo {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-}
-
-
-.logo p {
+.navbar-brand .logo-text {
 	color: black;
 	font-size: 24px;
 	font-weight: 600;
 	align-self: flex-end;
 }
 
-.logo img {
+.navbar-brand img {
 	width: 47px;
 	height: 47px;
 }
 
-.link-container > ul {
-	list-style: none;
-	display: flex;
-	flex-direction: row;
+.navbar-collapse ul {
+	gap: 37px;
+}
+
+.navbar-collapse li {
 	font-size: 22px;
 	font-weight: 500;
-	gap: 35px;
 }
 
-.link-container li a {
-	text-decoration: none;
-	color: rgba(29, 29, 29, 0.70);
-}
-
-.link-select {
+.navbar-collapse .active {
 	border-bottom: 4px solid #FFCB45 ;
 	border-radius: 1px;
 }
 
-
-nav > .function {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-around;
-	gap: 0 33px;
+.function img {
+	width: 24px;
+	height: 24px;
 }
 
-
-nav > .function {
-	
-}
-
-nav .function .signin-button {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	padding: 12px 24px;
-	background-color: #FFCB45;
-	border-radius: 50px;
-
-	gap: 16px;
-}
-
-nav .function .signin-button p {
-	font-size: 14px;
-	font-weight: 700;
+.function > img {
+	margin-left: 33px;
 }
 
 .cart {
-	position: relative;
+	margin-left: 33px;
+} 
+
+.badge {
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 8px;
 }
 
-.cart .cart-number {
-	position: absolute;
-	top: -8px;
-	right: -8px;
+#cart-number {
+	font-size: 9px;
+	font-weight: 500;
+	background: #FFCB45;
+	color: #1D1D1D;
+	/* padding: 0 8px; */
+	vertical-align: top;
+	margin-left: -8px; 
+}
+
+.function button {
+	background-color: #FFCB45;
+	margin-left: 33px;
+	padding: 12px 24px;
+	border-radius: 50px;
+}
+
+.function button:hover {
 	background-color: #FFCB45;
 }
 
-#intro {
+#banner {
 	height: 600px;
 	background-color: #FFF9EA;
 }
+
+#banner .banner-left {
+	width: 50%;
+	height: 100%;
+	padding: 150px;
+	position: relative;
+}
+
+#banner .banner-right {
+	width: 50%;
+	height: 100%;
+	background: blue;
+}
+
+#banner .slogan-text {
+	width: 480px;
+	font-size: 48px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+#banner .description {
+	width: 370px;
+	font-size: 18px;
+	font-weight: 400;
+	color: rgba(29, 29, 29, 0.70);
+	margin-bottom: 20px;
+}
+
+#banner .slogan-text span {
+	color: #FFCB45;
+}
+
+.getstart-button {
+	background-color: #FFCB45;
+	border-radius: 50px;
+	display: inline-block;
+	width: 150px;
+}
+
+.wave {
+	position: absolute;
+
+	left: 0;
+	bottom: 50px;
+}
+
+.random-foods {
+	display: grid;
+
+	grid-template-columns: repeat(9 / 110%);
+	grid-template-rows: repeat(9 / 110%)
+}
+
+.random-foods > img {
+	display: flex;
+	justify-content: center;
+	border: 1px solid black;
+	align-self: center; 
+}
+
+.food {
+ color: transparent;
+ text-shadow: 0 0 black;
+ align-self: center;
+}
+

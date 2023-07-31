@@ -5,51 +5,91 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fresh Bite</title>
 
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	
 	<!-- Link CSS -->
-	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	
 </head>
 <body>
 	<header>
-		<nav>
-			<div class="logo">
-				<p>Fresh Bite</p>
-				<img src="./assets/icons/bowl.svg" alt="Bowl">
-			</div>
+		<nav class="navbar navbar-expand-lg h-100">
+			<div class="container d-flex flex-row justify-content-between">
+				<a href="#" class="navbar-brand d-flex flex-row">
+					<span class="logo-text">Fresh Bite</span>
+					<img src="assets/icons/bowl.svg" alt="Fresh Bite logo">
+				</a>
 
-			<div class="link-container">
-				<ul>
-					<li ><a class="nav-item link-select" href="#">Home</a></li>
-					<li ><a class="nav-item" href="#">Menu</a></li>
-					<li ><a class="nav-item" href="#">How it works</a></li>
-					<li ><a class="nav-item" href="#">About</a></li>
-					<li ><a class="nav-item" href="#">Contact</a></li>
-				</ul>
-			</div>
-
-			<div class="function">
-				<img src="./assets/icons/search.svg" alt="Search Icon">
-
-				<div class="cart">
-					<img id="cart" src="./assets/icons/cart.svg" alt="Cart">
-					<p class="cart-number">2</p>
+				<div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">How it works</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+					</ul>
 				</div>
 
-				<div class="signin-button">
-					<img src="./assets/icons/signin.svg" alt="Sign In">
-					<p>Sign in</p>
+				<div class="function d-flex justify-content-around align-items-center">
+					<img src="assets/icons/search.svg" alt="Search Icon">
+					<div class="cart">
+						<img src="assets/icons/cart.svg" alt="Cart Icon">
+						<span class="badge" id="cart-number">1</span>
+					</div>
+					<button class="btn" type="button">
+						<img src="assets/icons/signin.svg" alt="Sign In Icon">
+						Sign in
+					</button>
 				</div>
 			</div>
 		</nav>
+
 	</header>
 
 	<main>
-		<section id="intro">
+		<section id="banner">
+			<div class="h-100 p-0 container-fluid d-flex flex-row align-items-center">
+					<div class="banner-left d-flex flex-column justify-content-center">
+						<h1 class="slogan-text align-middle">
+							Be The Fastest In Delivery Your <span>Food</span>
+						</h1>
+						<p class="description align-middle d-block" >
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+						</p>
 
+						<button class="btn getstart-button" type="button">
+							<img src="assets/icons/signin.svg" alt="Get Started Icon">
+							Get Started	
+						</button>
+
+						<div class="wave">
+							<img class="d-block" src="assets/icons/wave.svg" alt="Wave">
+							<img class="d-block" src="assets/icons/wave.svg" alt="Wave">
+						</div>
+					</div>
+
+					<div class="banner-right">
+						<div class="random-foods">
+							<div class="food">
+								<img src="./assets/images/banner/food1.png" alt="Food 1" width="343">
+							</div>
+							<div class="food">
+								<img src="./assets/images/banner/food2.png" alt="Food 2" width="202">
+							</div>
+							<div class="food">
+								<img src="./assets/images/banner/food3.png" alt="Food 3" width="275">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
 	</main>
 
 	<footer></footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
