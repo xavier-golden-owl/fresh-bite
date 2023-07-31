@@ -10,15 +10,11 @@ html {
 	scroll-behavior: smooth;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 
 body {
 	font-family: 'Readex Pro', sans-serif;
 }
+
 
 header {
 	background: #FFF9EA;
@@ -26,10 +22,8 @@ header {
 }
 
 .navbar-brand .logo-text {
-	color: black;
+	color: #1D1D1D;
 	font-size: 24px;
-	font-weight: 600;
-	align-self: flex-end;
 }
 
 .navbar-brand img {
@@ -44,6 +38,7 @@ header {
 .navbar-collapse li {
 	font-size: 22px;
 	font-weight: 500;
+	color: rgba(29, 29, 29, 0.70);
 }
 
 .navbar-collapse .active {
@@ -75,7 +70,7 @@ header {
 	font-weight: 500;
 	background: #FFCB45;
 	color: #1D1D1D;
-	/* padding: 0 8px; */
+	/* padding: 8px 0; */
 	vertical-align: top;
 	margin-left: -8px; 
 }
@@ -91,32 +86,31 @@ header {
 	background-color: #FFCB45;
 }
 
-#banner {
+#home {
 	height: 600px;
 	background-color: #FFF9EA;
 }
 
-#banner .banner-left {
+#home .home-left {
 	width: 50%;
 	height: 100%;
 	padding: 150px;
 	position: relative;
 }
 
-#banner .banner-right {
+#home .home-right {
 	width: 50%;
 	height: 100%;
-	background: blue;
 }
 
-#banner .slogan-text {
+#home .slogan-text {
 	width: 480px;
 	font-size: 48px;
 	font-weight: 600;
 	margin-bottom: 20px;
 }
 
-#banner .description {
+#home .description {
 	width: 370px;
 	font-size: 18px;
 	font-weight: 400;
@@ -124,7 +118,7 @@ header {
 	margin-bottom: 20px;
 }
 
-#banner .slogan-text span {
+#home .slogan-text span {
 	color: #FFCB45;
 }
 
@@ -142,23 +136,110 @@ header {
 	bottom: 50px;
 }
 
-.random-foods {
-	display: grid;
-
-	grid-template-columns: repeat(9 / 110%);
-	grid-template-rows: repeat(9 / 110%)
+.food1, .food2, .food3 {
+  -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
 }
 
-.random-foods > img {
-	display: flex;
-	justify-content: center;
-	border: 1px solid black;
-	align-self: center; 
+
+section:not(#home) {
+	padding-top: 80px;
 }
 
-.food {
- color: transparent;
- text-shadow: 0 0 black;
- align-self: center;
+#how-it-works {
+	padding-left: 200px;
+	padding-right: 200px;
 }
 
+main .part {
+	color: #FFCB45;
+	font-size: 22px;
+	font-weight: 500;
+	margin-bottom: 6px;
+}
+
+main .title {
+	color: #1D1D1D;
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 26px;
+}
+
+main .description {
+	color: rgba(29, 29, 29, 0.70);
+	font-size: 22px;
+	font-weight: 500;
+	margin-bottom: 32px;
+}
+
+main .second-part .card {
+	border: none;
+	text-align: center;
+}
+
+#how-it-works img {
+	width: 180px;
+	text-align: center;
+}
+
+#how-it-works .second-part .card .card-title {
+	color: #1D1D1D;
+	font-size: 28px;
+	font-weight: 600;
+	margin-top: 24px;
+}
+
+#how-it-works .second-part .card .card-text {
+	color: rgba(29, 29, 29, 0.70);
+	font-size: 20px;
+	font-weight: 500;
+	margin-top: 15px;
+}
+
+#our-menu {
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+#our-menu .second-part {
+	gap: 24px;
+}
+
+#our-menu .second-part .card {
+	box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+}
+
+#our-menu .second-part .card-img {
+	background-color: #F1F1F1;
+	height: 300px;
+}
+
+#our-menu .second-part .card-img img {
+	width: 230px;
+}
+
+#our-menu .second-part .card-body {
+	padding: 0;
+}
+
+#our-menu .second-part .card-body::before{
+	content: '';
+	display: block;
+	height: 20px;
+	width: 100%;
+	margin-top: -20px;
+	background-color: white;
+	border-radius: 50%/20px 20px 0 0;;
+}
+
+#signup {
+	height: 450px;
+}
+
+.signup-img {
+	/* width: 1180px;
+	height: 332px; */
+
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0.71) 100%), url(../images/signup/1.jpeg), lightgray 50% / cover no-repeat;
+	background-size: 1180px auto;
+}
