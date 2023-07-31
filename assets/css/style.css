@@ -314,6 +314,73 @@ main .second-part .card {
 
 footer {
 	background-color: #FFF9EA;
-	height: 50vh;
 	margin-top: 70px;
+}
+
+footer hr {
+	margin-top: 80px;
+}
+
+footer .first-part {
+	padding: 80px 100px 0 100px;
+}
+
+footer .first-part .first {
+	width: 30%;
+	height: 100%;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+footer .first-part .first p{
+	font-size: 20px;
+	font-weight: 400;
+	color: rgba(29, 29, 29, 0.70);
+	margin-top: 25px;
+}
+
+footer .first-part .social {
+	margin-top: 32px;
+	gap: 24px;
+}
+
+footer .first-part .social img {
+	height: 50px;
+	width: 50px;
+	padding: 10px 10px;
+	background-color: #fff;
+	border-radius: 50px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fb {
+	background-color: #FFCB45 !important;
+}
+
+footer .first-part .second {
+	width: 70%;
+	height: 100%;
+}
+
+footer .second-part {
+	color: #1D1D1D;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 40px;
+}
+
+footer .second h3 {
+	color: #1D1D1D;
+	font-size: 20px;
+	font-weight: 500;
+
+	margin-bottom: 31px;
+}
+
+footer .second p  {
+	color: rgba(29, 29, 29, 0.70);
+	font-size: 18px;
+	font-weight: 400;
+
+	margin-bottom: 16px;
 }
