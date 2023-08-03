@@ -16,6 +16,9 @@ $(document).ready(function() {
 					const element = menu.html();
 					menu.append($.parseHTML(element))
 				}
+				else {
+					$(this).text("It's All")
+				}
 			}
 		}
 	})
