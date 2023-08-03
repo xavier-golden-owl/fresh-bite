@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Fresh Bite</title>
 
 	<!-- Bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
 	<!-- Link CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	
+
 </head>
+
 <body>
-	<header>
-		<nav class="navbar navbar-expand-lg h-100">
-			<div class="container d-flex flex-row justify-content-between">
-				<a href="#" class="navbar-brand d-flex flex-row">
-					<span class="logo-text align-self-end fw-semibold">Fresh Bite</span>
-					<img src="assets/icons/bowl.svg" alt="Fresh Bite logo">
-				</a>
+	<nav class="sticky-top navbar navbar-expand-lg" style="background: #FFF9EA;">
+		<div class="container d-flex flex-row justify-content-between">
+			<a href="#" class="navbar-brand d-flex flex-row">
+				<span class="logo-text align-self-end fw-semibold">Fresh Bite</span>
+				<img src="assets/icons/bowl.svg" alt="Fresh Bite logo">
+			</a>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 				<div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
 					<ul class="navbar-nav">
 						<li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">How it works</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-						<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+						<li class="nav-item"><a href="#our-menu" class="nav-link">Menu</a></li>
+						<li class="nav-item"><a href="#how-it-works" class="nav-link">How it works</a></li>
+						<li class="nav-item"><a href="#signin" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="#signin" class="nav-link">Contact</a></li>
 					</ul>
 				</div>
 
@@ -43,60 +51,59 @@
 					</button>
 				</div>
 			</div>
-		</nav>
-
-	</header>
+		</div>
+	</nav>
 
 	<main>
 		<section id="home">
-			<div class="h-100 p-0 container-fluid d-flex flex-row align-items-center">
-					<div class="home-left d-flex flex-column justify-content-center">
-						<h1 class="slogan-text align-middle">
-							Be The Fastest In Delivery Your <span>Food</span>
-						</h1>
-						<p class="description align-middle d-block" >
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
-						</p>
+			<div class="h-100 p-0 container-fluid d-flex flex-row align-items-center flex-wrap">
+				<div class="h-100 home-left d-flex flex-column justify-content-center" style="z-index: 2;">
+					<h1 class="slogan-text align-middle">
+						Be The Fastest In Delivery Your <span>Food</span>
+					</h1>
+					<p class="description align-middle d-block">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+					</p>
 
-						<button class="btn getstart-button" type="button">
-							<img src="assets/icons/signin.svg" alt="Get Started Icon">
-							Get Started	
-						</button>
+					<button class="btn getstart-button" type="button">
+						<img src="assets/icons/signin.svg" alt="Get Started Icon">
+						Get Started
+					</button>
 
-						<div class="wave">
-							<img class="d-block" src="assets/icons/wave.svg" alt="Wave">
-							<img class="d-block" src="assets/icons/wave.svg" alt="Wave">
-						</div>
+					<div class="wave">
+						<img class="d-block" src="assets/icons/wave.svg" alt="Wave">
+						<img class="d-block" src="assets/icons/wave.svg" alt="Wave">
 					</div>
+				</div>
 
-					<div class="home-right d-flex flex-column">
-								<div class="d-flex flex-row justify-content-center">
-									<div class="d-flex flex-column justify-content-around">
-										<img class="cir1" src="assets/icons/circle.svg" alt="Circle" width="54">
-										<img class="cir2 align-self-end" src="assets/icons/circle.svg" alt="Circle" width="19">
-									</div>
-									<img class="food1" src="./assets/images/banner/food1.png" alt="Food 1" width="343">
-									<img class="cir3 align-self-end" src="assets/icons/circle.svg" alt="Circle" width="74">
-								</div>
-								<div class="d-flex flex-row justify-content-center">
-									<img class="cir4" src="assets/icons/circle.svg" alt="Circle" width="41">
-									<img class="food2 align-self-start" src="./assets/images/banner/food2.png" alt="Food 2" height="202">
-									<img class="food3 aligns-self-center" src="./assets/images/banner/food3.png" alt="Food 3" width="275">		
+				<div class="home-right d-flex flex-column" style="z-index: 1;">
+					<div class="d-flex flex-row justify-content-center overflow-x-hidden">
+						<div class="d-flex flex-column justify-content-around">
+							<img class="cir1" src="assets/icons/circle.svg" alt="Circle" width="54">
+							<img class="cir2 align-self-end" src="assets/icons/circle.svg" alt="Circle" width="19">
+						</div>
+						<img class="food1" src="./assets/images/banner/food1.png" alt="Food 1" width="343">
+						<img class="cir3 align-self-end" src="assets/icons/circle.svg" alt="Circle" width="74">
+					</div>
+					<div class="d-flex flex-row justify-content-center overflow-x-hidden">
+						<img class="cir4" src="assets/icons/circle.svg" alt="Circle" width="41">
+						<img class="food2 align-self-start" src="./assets/images/banner/food2.png" alt="Food 2" height="202">
+						<img class="food3 aligns-self-center" src="./assets/images/banner/food3.png" alt="Food 3" width="275">
 
-							</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
+		
 		<section id="how-it-works">
 			<center>
 				<p class="part">How it works</p>
 				<h1 class="title">What We Serve</h1>
-				<p class="description">Product Quality Is Our Priority, And Always Guarantees<br>Halal And Safety Until It Is In Your Hands.</p>
+				<p class="description">Product Quality Is Our Priority, And Always Guarantees<br>Halal And Safety Until It Is In
+					Your Hands.</p>
 			</center>
-			
-			<div class="second-part d-flex flex-row justify-content-between">
+
+			<div class="second-part d-flex flex-row justify-content-center flex-wrap align-items-center">
 				<div class="card" style="width: 19rem;">
 					<center>
 						<img class="card-img-top" src="assets/images/how-it-works/1.png" alt="Card image cap">
@@ -124,7 +131,7 @@
 						<p class="card-text">The best quality of food for you</p>
 					</div>
 				</div>
-												
+
 			</div>
 		</section>
 
@@ -135,7 +142,7 @@
 				<p class="description">Lorem ipsum dolor sit amet, consectetur<br>adipiscing elit ut aliquam</p>
 			</center>
 
-			<div class="second-part d-flex flex-row justify-content-center">
+			<div class="second-part d-flex flex-row justify-content-center flex-wrap">
 				<div class="card" style="width: 22rem;">
 					<div class="card-img d-flex align-items-center justify-content-center">
 						<center>
@@ -160,7 +167,7 @@
 					<div class="card-body">
 						<h5 class="card-title">Spaghetti</h5>
 						<p class="card-text">lorem ipsum</p>
-												<div class="p-3 d-flex flex-row justify-content-between">
+						<div class="p-3 d-flex flex-row justify-content-between">
 							<span>$ 20.2</span>
 							<img src="assets/icons/heart.svg" alt="Heart">
 						</div>
@@ -175,7 +182,7 @@
 					<div class="card-body">
 						<h5 class="card-title">Spaghetti</h5>
 						<p class="card-text">lorem ipsum</p>
-												<div class="p-3 d-flex flex-row justify-content-between">
+						<div class="p-3 d-flex flex-row justify-content-between">
 							<span>$ 20.2</span>
 							<img src="assets/icons/heart.svg" alt="Heart">
 						</div>
@@ -190,7 +197,7 @@
 					<div class="card-body">
 						<h5 class="card-title">Spaghetti</h5>
 						<p class="card-text">lorem ipsum</p>
-												<div class="p-3 d-flex flex-row justify-content-between">
+						<div class="p-3 d-flex flex-row justify-content-between">
 							<span>$ 20.2</span>
 							<img src="assets/icons/heart.svg" alt="Heart">
 						</div>
@@ -204,26 +211,159 @@
 			</center>
 		</section>
 
-		<section id="what-the-say" class="d-flex flex-row justify-content-center">
-			<div class="first-part d-flex flex-column justify-content-between">
+		<section id="what-the-say" class="d-flex flex-row justify-content-start">
+			<div class="first-part m-auto d-flex flex-column justify-content-between">
 				<img src="assets/images/what-the-say/1.jpeg" alt="1" width="431">
 				<div class="d-flex flex-row justify-content-between">
 					<img src="assets/images/what-the-say/2.jpeg" alt="2" width="208">
 					<img src="assets/images/what-the-say/3.jpeg" alt="3" width="208">
 				</div>
 			</div>
-			<div class="second-part p-5">
+			<div
+				class="second-part p-5 align-self-start d-flex flex-column align-content-start overflow-y-hidden overflow-x-scroll">
 				<p class="part">What the say</p>
 				<h1 class="title">What Our Customers Say<br>
-				About Us
+					About Us
 				</h1>
 
-				<div class="d-flex flex-row justify-content-center" style="gap: 10px">
+				<div class="d-flex flex-row align-items-start overflow-x-scroll" style="gap: 10px; flex-grow: 1;">
 					<div class="card">
-						
+						<div class="first d-flex flex-row justify-content-start p-2">
+							<img src="./assets/images/what-the-say/h1.jpeg" alt="Customer 1" class="rounded-circle shadow-1-strong"
+								width="60" height="60">
+							<div class="text-start" style="margin-left: 10px">
+								<h4>Naura Silvana</h4>
+								<div>
+
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/h-star.svg" alt="" width="24">
+
+								</div>
+							</div>
+						</div>
+						<div class="second text-start p-3">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae deleniti eveniet voluptatum
+								vek.</p>
+						</div>
+
 					</div>
 					<div class="card">
-						
+						<div class="first d-flex flex-row justify-content-start p-2">
+							<img src="./assets/images/what-the-say/h1.jpeg" alt="Customer 1" class="rounded-circle shadow-1-strong"
+								width="60" height="60">
+							<div class="text-start" style="margin-left: 10px">
+								<h4>Naura Silvana</h4>
+								<div>
+
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/h-star.svg" alt="" width="24">
+
+								</div>
+							</div>
+						</div>
+						<div class="second text-start p-3">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae deleniti eveniet voluptatum
+								vek.</p>
+						</div>
+
+					</div>
+					<div class="card">
+						<div class="first d-flex flex-row justify-content-start p-2">
+							<img src="./assets/images/what-the-say/h1.jpeg" alt="Customer 1" class="rounded-circle shadow-1-strong"
+								width="60" height="60">
+							<div class="text-start" style="margin-left: 10px">
+								<h4>Naura Silvana</h4>
+								<div>
+
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/h-star.svg" alt="" width="24">
+
+								</div>
+							</div>
+						</div>
+						<div class="second text-start p-3">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae deleniti eveniet voluptatum
+								vek.</p>
+						</div>
+
+					</div>
+					<div class="card">
+						<div class="first d-flex flex-row justify-content-start p-2">
+							<img src="./assets/images/what-the-say/h1.jpeg" alt="Customer 1" class="rounded-circle shadow-1-strong"
+								width="60" height="60">
+							<div class="text-start" style="margin-left: 10px">
+								<h4>Naura Silvana</h4>
+								<div>
+
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/h-star.svg" alt="" width="24">
+
+								</div>
+							</div>
+						</div>
+						<div class="second text-start p-3">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae deleniti eveniet voluptatum
+								vek.</p>
+						</div>
+
+					</div>
+					<div class="card">
+						<div class="first d-flex flex-row justify-content-start p-2">
+							<img src="./assets/images/what-the-say/h1.jpeg" alt="Customer 1" class="rounded-circle shadow-1-strong"
+								width="60" height="60">
+							<div class="text-start" style="margin-left: 10px">
+								<h4>Naura Silvana</h4>
+								<div>
+
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/h-star.svg" alt="" width="24">
+
+								</div>
+							</div>
+						</div>
+						<div class="second text-start p-3">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae deleniti eveniet voluptatum
+								vek.</p>
+						</div>
+
+					</div>
+					<div class="card">
+						<div class="first d-flex flex-row justify-content-start p-2">
+							<img src="./assets/images/what-the-say/h1.jpeg" alt="Customer 1" class="rounded-circle shadow-1-strong"
+								width="60" height="60">
+							<div class="text-start" style="margin-left: 10px">
+								<h4>Naura Silvana</h4>
+								<div>
+
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/star.svg" alt="" width="24">
+									<img src="./assets/icons/h-star.svg" alt="" width="24">
+
+								</div>
+							</div>
+						</div>
+						<div class="second text-start p-3">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta molestiae deleniti eveniet voluptatum
+								vek.</p>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -241,9 +381,9 @@
 		</section>
 	</main>
 
-	<footer>
+	<footer style="width: 100%">
 		<div class="first-part">
-			<div class="d-flex flex-row justify-content-start">
+			<div class="d-flex flex-row justify-content-start flex-wrap">
 				<div class="first d-flex flex-column align-self-start">
 					<div class="d-flex flex-row">
 						<span class="logo-text align-self-end fw-semibold">Fresh Bite</span>
@@ -257,9 +397,9 @@
 						<img class="fb" src="assets/icons/fb.svg" alt="facebook">
 						<img src="assets/icons/twitter.svg" alt="twitter">
 					</div>
-				</div>				
+				</div>
 
-				<div class="second d-flex flex-row align-self-start justify-content-around">
+				<div class="second m-auto d-flex flex-row align-self-between justify-content-around flex-wrap">
 					<div class="d-flex flex-column justify-content-start">
 						<h3>Company</h3>
 						<p>About Us</p>
@@ -272,14 +412,14 @@
 						<p>Policy</p>
 						<p>Shipping</p>
 					</div>
-					<div class="d-flex flex-column justify-content-start">
+					<div class="d-flex flex-column justify-content-start mr-auto">
 						<h3>Get In Touch</h3>
 						<p>+91 123 4567 8900</p>
 						<p>food@example.com</p>
 					</div>
-				</div>				
+				</div>
 			</div>
-			
+
 			<hr>
 		</div>
 		<center>
@@ -289,6 +429,12 @@
 		</center>
 	</footer>
 
+	<script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script></body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+
+	<script src="./assets/js/index.js"></script>
+</body>
+
 </html>
