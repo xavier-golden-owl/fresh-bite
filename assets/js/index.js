@@ -11,7 +11,8 @@ $(document).ready(function() {
 	$('button').on({
 		click: function() {
 			if ($(this).text() === 'More Menu') {
-				let menu = $('#our-menu .second-part')
+				console.log($(this).text())
+				let menu = $('#our-menu > div')
 				if (menu.children().length * 2 <= 32) {
 					const element = menu.html();
 					menu.append($.parseHTML(element))
