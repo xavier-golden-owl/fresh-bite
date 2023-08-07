@@ -1,0 +1,19 @@
+// COLORS
+
+$primary-color: #FFCB45;
+$accent-color: #F28B42;
+$black-color: #1D1D1D;
+$text-light-color: hsl(0, 0%, 70%);
+$light-color: #FFF9EA;
+
+// FONT FAMILY
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+
+$font-weights: (
+	"regular": 400,
+	"medium": 500,
+	"semi-bold": 600,
+	"bold": 700,
+);
+
+$primary-font: "Readex Pro", sans-serif;

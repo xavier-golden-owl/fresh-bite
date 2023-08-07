@@ -1,0 +1,100 @@
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+
+nav .navbar-brand {
+  color: #1D1D1D;
+  font-size: 24px;
+  font-weight: 600;
+}
+nav .navbar-brand img {
+  width: 47px;
+  height: 47px;
+}
+nav .navbar-collapse ul {
+  gap: 37px;
+}
+nav .navbar-collapse ul li {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27.5px;
+  color: hsl(0, 0%, 70%);
+}
+nav .navbar-collapse ul .active {
+  border-bottom: 4px solid #FFCB45;
+}
+nav .function > img {
+  margin-left: 33px;
+}
+nav .function img {
+  width: 24px;
+  height: 24px;
+}
+nav .function button {
+  background-color: #FFCB45;
+  margin-left: 33px;
+  padding: 12px 24px;
+  border-radius: 50px;
+}
+nav .function button:hover {
+  background-color: #FFCB45;
+}
+nav .function .cart {
+  margin-left: 33px;
+}
+nav .function .cart .badge {
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 8px;
+  font-size: 9px;
+  font-weight: 500;
+  background: #FFCB45;
+  color: #1D1D1D;
+  vertical-align: top;
+  margin-left: -8px;
+}
+
+footer {
+  background-color: #FFF9EA;
+  margin-top: 70px;
+  padding-bottom: 20px;
+}
+footer hr {
+  margin-top: 80px;
+}
+footer .first-part {
+  padding: 80px 100px 0 100px;
+}
+footer .first-part .first {
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #home img {
+    opacity: 0.3;
+  }
+  #home .home-left {
+    padding: 20px;
+  }
+  #how-it-works {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #what-the-say {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  #signup {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

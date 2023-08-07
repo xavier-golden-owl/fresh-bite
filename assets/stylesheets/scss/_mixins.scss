@@ -1,0 +1,42 @@
+@import "variables";
+
+@mixin display-text {
+	font-size: 48px;
+	font-weight: map-get($font-weights, "semi-bold");
+	line-height: 60px;
+}
+
+@mixin header-text {
+	font-size: 32px;
+	font-weight: map-get($font-weights, "bold");
+	line-height: 40px;
+}
+
+@mixin title-1-text {
+	font-size: 28px;
+	font-weight: map-get($font-weights, "medium");
+	line-height: 35px;
+}
+
+@mixin title-2-text {
+	font-size: 22px;
+	font-weight: map-get($font-weights, "medium");
+	line-height: 27.5px;
+}
+
+@mixin headline-text {
+	font-size: 20px;
+	font-weight: map-get($font-weights, "medium");
+	line-height: 25px;
+}
+
+@mixin body-text {
+	font-size: 18px;
+	font-weight: map-get($font-weights, "regular");
+	line-height: 22.5px;
+}
+
+@mixin button-text {
+	font-size: 14px;
+	font-weight: map-get($font-weights, "bold");
+}

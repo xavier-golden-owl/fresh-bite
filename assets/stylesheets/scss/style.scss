@@ -1,0 +1,118 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+
+
+nav {
+	.navbar-brand {
+		color: $black-color;
+		font-size: 24px;
+		font-weight: map-get($font-weights, "semi-bold");
+
+		img {
+			width: 47px;
+			height:  47px;
+		}	
+	}
+
+	.navbar-collapse {
+		ul {
+			gap: 37px;
+
+			li {
+				@include title-2-text();
+				color: $text-light-color;
+			}
+
+			.active {
+				border-bottom: 4px solid $primary-color;
+			}
+		}
+	}
+
+	.function {
+		>img {
+			margin-left: 33px;
+		}
+
+		img {
+			width: 24px;
+			height: 24px;
+		}
+
+		button {
+			background-color: $primary-color;
+			margin-left: 33px;
+			padding: 12px 24px;
+			border-radius: 50px;
+
+			&:hover {
+				background-color: $primary-color;
+			}
+		}
+
+		.cart {
+			margin-left: 33px;
+
+			.badge	{
+				padding-left: 8px;
+				padding-right: 8px;
+				border-radius: 8px;
+
+				font-size: 9px;
+				font-weight: map-get($font-weights, "medium");
+				background: $primary-color;
+				color: $black-color;
+				vertical-align: top;
+				margin-left: -8px;			
+			}
+		}
+	}
+}
+
+main {
+
+}
+
+footer {
+	background-color: $light-color;
+	margin-top: 70px;
+	padding-bottom: 20px;
+
+	hr {
+		margin-top: 80px;
+	}
+
+	.first-part {
+		padding: 80px 100px 0 100px;
+
+		.first {
+			height: 100%;
+			
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#home {
+		img {
+			opacity: 0.3;
+		}
+		.home-left {
+			padding: 20px;
+		}
+	}
+	#how-it-works {
+		padding: 20px;
+	}
+}
+@media screen and (max-width: 1300px) {
+	#what-the-say {
+		flex-wrap: wrap;
+		padding: 20px;
+	}
+	#signup {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
