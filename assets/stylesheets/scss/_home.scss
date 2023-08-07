@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'mixins';
+
+#home {
+	background-color: $light;
+	
+	.left {
+		width: 50%;
+		padding: 150px;
+		position: relative;
+		z-index: 3;
+
+		h1 {
+			width: 480px;
+			@include display-text();
+
+			span {
+				color: $primary;
+			}
+		}
+
+		p {
+			width: 370px;
+			@include body-text();
+			color: $text-light;
+			margin-bottom: 20px;
+		}
+
+		button {
+			width: 170px;
+		}
+
+		div {
+			position: absolute;
+
+			left: 0;
+			bottom: 50px;
+		}
+	}
+
+
+	.right {
+		width: 50%;
+
+		.image-shadow {
+			--webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+			filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+		}
+	}
+}

@@ -1,0 +1,24 @@
+@import "variables";
+@import "mixins";
+
+#how-it-works {
+	padding: 0 200px;
+
+	img {
+		width: 180px;
+	}
+
+	>div {
+		.card-title {
+			margin-top: 24px;
+			@include title-1-text();
+			color: $black;
+		}
+
+		.card-text {
+			margin-top: 15px;
+			@include headline-text();
+			color: $text-light;
+		}
+	}
+}

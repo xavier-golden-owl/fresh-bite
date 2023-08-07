@@ -1,11 +1,42 @@
 @import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Readex Pro", sans-serif;
+  transition: all 0.3s linear;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+button {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  border-radius: 50px !important;
+  padding: 12px 24px !important;
+  background-color: #FFCB45 !important;
+}
+button:hover {
+  background-color: #FFCB45 !important;
 }
 
 nav .navbar-brand {
@@ -17,6 +48,10 @@ nav .navbar-brand img {
   width: 47px;
   height: 47px;
 }
+nav .navbar-toggler {
+  background-color: transparent !important;
+  border: none;
+}
 nav .navbar-collapse ul {
   gap: 37px;
 }
@@ -24,33 +59,25 @@ nav .navbar-collapse ul li {
   font-size: 22px;
   font-weight: 500;
   line-height: 27.5px;
-  color: hsl(0, 0%, 70%);
+  color: rgba(29, 29, 29, 0.7);
 }
-nav .navbar-collapse ul .active {
+nav .navbar-collapse ul li a {
+  border-bottom: 4px solid #FFF9EA;
+}
+nav .navbar-collapse ul li a:hover {
+  color: #1D1D1D;
   border-bottom: 4px solid #FFCB45;
 }
-nav .function > img {
+nav .function > * {
   margin-left: 33px;
 }
 nav .function img {
   width: 24px;
   height: 24px;
-}
-nav .function button {
-  background-color: #FFCB45;
-  margin-left: 33px;
-  padding: 12px 24px;
-  border-radius: 50px;
-}
-nav .function button:hover {
-  background-color: #FFCB45;
-}
-nav .function .cart {
-  margin-left: 33px;
+  cursor: pointer;
 }
 nav .function .cart .badge {
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 4px 8px;
   border-radius: 8px;
   font-size: 9px;
   font-weight: 500;
@@ -60,26 +87,262 @@ nav .function .cart .badge {
   margin-left: -8px;
 }
 
-footer {
+#home {
   background-color: #FFF9EA;
+}
+#home .left {
+  width: 50%;
+  padding: 150px;
+  position: relative;
+  z-index: 3;
+}
+#home .left h1 {
+  width: 480px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+}
+#home .left h1 span {
+  color: #FFCB45;
+}
+#home .left p {
+  width: 370px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.5px;
+  color: rgba(29, 29, 29, 0.7);
+  margin-bottom: 20px;
+}
+#home .left button {
+  width: 170px;
+}
+#home .left div {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+}
+#home .right {
+  width: 50%;
+}
+#home .right .image-shadow {
+  --webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+#how-it-works {
+  padding: 0 200px;
+}
+#how-it-works img {
+  width: 180px;
+}
+#how-it-works > div .card-title {
+  margin-top: 24px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #1D1D1D;
+}
+#how-it-works > div .card-text {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  color: rgba(29, 29, 29, 0.7);
+}
+
+#our-menu {
+  padding: 0 80px;
+}
+#our-menu > div {
+  gap: 24px;
+}
+#our-menu > div .card {
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+}
+#our-menu > div .card .card-img {
+  background-color: #f1f1f1;
+  height: 300px;
+}
+#our-menu > div .card .card-img img {
+  width: 230px;
+}
+#our-menu > div .card .card-body {
+  padding: 0;
+}
+#our-menu > div .card .card-body:before {
+  content: "";
+  display: block;
+  height: 20px;
+  width: 100%;
+  margin-top: -20px;
+  background-color: #fff;
+  border-radius: 50%/20px 20px 0 0;
+}
+#our-menu button {
+  padding: 12px 24px;
+  border-radius: 50px;
   margin-top: 70px;
-  padding-bottom: 20px;
 }
-footer hr {
-  margin-top: 80px;
+
+#what-the-say {
+  padding: 0 150px;
+  overflow-x: hidden;
 }
-footer .first-part {
-  padding: 80px 100px 0 100px;
+#what-the-say .left {
+  gap: 10px;
 }
-footer .first-part .first {
-  height: 100%;
+#what-the-say .left img {
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+#what-the-say .right .card {
+  min-width: 450px;
+  height: 220px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+#what-the-say .right .card h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #1D1D1D;
+}
+#what-the-say .right .card p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.5px;
+  color: rgba(29, 29, 29, 0.7);
+  margin-bottom: 0;
+}
+
+#signup {
+  margin: auto 250px;
+  height: 330px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0.71) 100%), url(../../images/signup/1.jpeg), lightgray 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 10px;
+  position: relative;
+}
+#signup div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+#signup h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #fff;
+}
+
+footer {
+  padding: 80px !important;
+}
+footer div {
+  background-color: #FFF9EA;
+}
+footer div .left span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1D1D1D;
+}
+footer div .left p {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(29, 29, 29, 0.7);
+  margin-top: 25px;
+}
+footer div .left .social-icons {
+  margin-top: 32px;
+  gap: 24px;
+}
+footer div .left .social-icons img {
+  height: 50px;
+  width: 50px;
+  padding: 10px 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+footer div .left .social-icons img:hover {
+  background-color: #FFCB45;
+}
+footer div .right {
+  width: 70%;
+}
+footer div .right h3 {
+  color: #1D1D1D;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 31px;
+  z-index: 3;
+}
+footer div .right p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.5px;
+  color: rgba(29, 29, 29, 0.7);
+  z-index: 3;
+}
+footer div .right div {
+  z-index: 1;
+}
+footer div .right div:nth-child(1) {
+  position: relative;
+}
+footer div .right div:nth-child(1):after {
+  content: "";
+  position: absolute;
+  height: 39px;
+  width: 39px;
+  background-color: #FFCB45;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+footer div .right div:nth-child(2) {
+  position: relative;
+}
+footer div .right div:nth-child(2):after {
+  content: "";
+  position: absolute;
+  height: 66px;
+  width: 66px;
+  background-color: #FFCB45;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  left: 0;
+  bottom: 0;
+}
+footer div .right div:nth-child(3) {
+  position: relative;
+}
+footer div .right div:nth-child(3):after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  background-color: #FFCB45;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  top: 0;
+  right: 0;
 }
 
 @media screen and (max-width: 768px) {
+  #home {
+    display: block;
+  }
   #home img {
     opacity: 0.3;
   }
-  #home .home-left {
+  #home .left {
     padding: 20px;
   }
   #how-it-works {
@@ -95,6 +358,49 @@ footer .first-part .first {
     margin-left: 20px;
     margin-right: 20px;
   }
+}
+main section:not(#home) {
+  margin-top: 70px;
+}
+main > * p:first-child {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27.5px;
+  color: #FFCB45;
+  margin-bottom: 6px;
+}
+main > * h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #1D1D1D;
+  margin-bottom: 26px;
+}
+main > * p:last-child {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 27.5px;
+  color: rgba(29, 29, 29, 0.7);
+  margin-bottom: 32px;
+}
+main .card {
+  border: none;
+  text-align: center;
+}
+
+footer {
+  background-color: #FFF9EA;
+  margin-top: 70px;
+  padding-bottom: 20px;
+}
+footer hr {
+  margin-top: 80px;
+}
+footer .first-part {
+  padding: 80px 100px 0 100px;
+}
+footer .first-part .first {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

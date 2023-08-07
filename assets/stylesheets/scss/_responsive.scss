@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+	#home {
+		display: block;
+		img {
+			opacity: 0.3;
+		}
+		.left {
+			padding: 20px;
+		}
+	}
+
+	#how-it-works {
+		padding: 20px;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	#what-the-say {
+		flex-wrap: wrap;
+		padding: 20px;
+	}
+	
+	#signup {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}

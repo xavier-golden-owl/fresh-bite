@@ -1,8 +1,25 @@
 @import "variables";
+@import "mixins";
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: $primary-font;
+	transition: all 0.3s linear;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+button {
+	@include button-text();
+	border-radius: 50px !important;
+	padding: 12px 24px !important;
+	background-color: $primary !important;
+
+	&:hover {
+		background-color: $primary !important;
+	}
 }

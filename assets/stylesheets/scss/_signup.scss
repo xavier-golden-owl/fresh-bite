@@ -1,0 +1,29 @@
+@import "variables";
+@import "mixins";
+
+#signup {
+	margin: auto 250px;
+	height: 330px;
+
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.71) 0%, rgba(0, 0, 0, 0.71) 100%), url(../../images/signup/1.jpeg), lightgray 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 10px;
+
+
+	position: relative;
+
+	div {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		transform: translateX(-50%) translateY(-50%);
+	}
+
+	h1 {
+		@include header-text();
+		color: #fff;
+	}
+}
