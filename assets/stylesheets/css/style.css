@@ -1,3 +1,4 @@
+
 @import "https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;600;700&display=swap";
 
 * {
@@ -12,15 +13,15 @@ body {
   overflow-x: hidden;
 }
 
-button {
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  border-radius: 50px !important;
-  padding: 12px 24px !important;
-  background-color: #FFCB45 !important;
+.btn {
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50px;
+  padding: 12px 24px;
+  background-color: #FFCB45;
 }
-button:hover {
-  background-color: #FFCB45 !important;
+.btn:hover {
+  background-color: #FFCB45;
 }
 
 nav .navbar-brand {
@@ -33,7 +34,7 @@ nav .navbar-brand img {
   height: 47px;
 }
 nav .navbar-toggler {
-  background-color: transparent !important;
+  background-color: transparent;
   border: none;
 }
 nav .navbar-collapse ul {

@@ -37,6 +37,6 @@
 }
 
 @mixin button-text {
-	font-size: 14px !important;
-	font-weight: map-get($font-weights, "bold") !important;
+	font-size: 14px;
+	font-weight: map-get($font-weights, "bold");
 }
